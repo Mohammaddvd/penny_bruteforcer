@@ -5,14 +5,6 @@ penny-bruteforcer is a simple tool by python for Brute-Forcing attack on service
 -ftp<br />
 
 > python3 penny.py --help<br />
-__________<br />
-\______   \ ____   ____   ____ ___.__.<br />
- |     ___// __ \ /    \ /    <   |  |<br />
- |    |   \  ___/|   |  \   |  \___  |<br />
- |____|    \___  >___|  /___|  / ____|<br />
-               \/     \/     \/\/<br />
-<br />
-<br />
 
 
 usage: penny.py [-h] [-s SERVICE] [-i IP] [--port PORT] [-d DATA] [-c COOKIES]<br />
