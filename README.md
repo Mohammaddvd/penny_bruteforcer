@@ -1,16 +1,16 @@
-penny-bruteforcer is a simple tool by python for Brute-Forcing attack on services:\n
--ssh\n
--mysql\n
--http-post\n
--ftp\n
+penny-bruteforcer is a simple tool by python for Brute-Forcing attack on services:
+-ssh
+-mysql
+-http-post
+-ftp
 
 > python3 penny.py --help
-__________\n
-\______   \ ____   ____   ____ ___.__.\n
- |     ___// __ \ /    \ /    <   |  |\n
- |    |   \  ___/|   |  \   |  \___  |\n
- |____|    \___  >___|  /___|  / ____|\n
-               \/     \/     \/\/\n
+__________
+\______   \ ____   ____   ____ ___.__.
+ |     ___// __ \ /    \ /    <   |  |
+ |    |   \  ___/|   |  \   |  \___  |
+ |____|    \___  >___|  /___|  / ____|
+               \/     \/     \/\/
 
 
 
