@@ -55,7 +55,3 @@ Options:
   -t THREAD, --thread THREAD  
                               Maximum number of threads (default is 30)
 ```
-
----
-
-Let me know if you need further modifications or additions!
