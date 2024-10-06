@@ -1,33 +1,61 @@
-penny-bruteforcer is a simple tool by python for Brute-Forcing attack on services:<br />
--ssh<br />
--mysql<br />
--http-post<br />
--ftp<br />
+# Penny-Bruteforcer
 
-> python3 penny.py --help<br />
+**Penny-Bruteforcer** is a simple Python tool designed for performing brute-force attacks on various services:
 
+- SSH
+- MySQL
+- HTTP POST
+- FTP
 
-usage: penny.py [-h] [-s SERVICE] [-i IP] [--port PORT] [-d DATA] [-c COOKIES]<br />
-                [-u USERNAME] [-p PASSWORD] [-U USERNAMES] [-P PASSWORDS]<br />
-                [-t THREAD]<br />
-<br />
-options:<br />
-  -h, --help            show this help message and exit<br />
-  -s SERVICE, --service SERVICE<br />
-                        Service name you want to attack , [mysql , ssh , http-post]<br />
-  -i IP, --ip IP        Your target ip<br />
-  --port PORT           Your target port<br />
-  -d DATA, --data DATA  data (for http-post) body e.x<br />
-                        'username=^USER^&pwd=^PWD^':incorect creds<br />
-  -c COOKIES, --cookies COOKIES<br />
-                        cookie value e.x -c 'admin:1'<br />
-  -u USERNAME, --user USERNAME<br />
-                        Your username ![means that you dont want to define username list]<br />
-  -p PASSWORD, --password PASSWORD<br />
-                        Your password ![means that you dont want to define password list]<br />
-  -U USERNAMES, --users USERNAMES<br />
-                        Your username list<br />
-  -P PASSWORDS, --passwords PASSWORDS<br />
-                        Your password list<br />
-  -t THREAD, --thread THREAD<br />
-                        max thread , defualt is 30<br />
+## Installation
+
+Ensure you have Python 3 installed, then clone the repository and navigate to the project directory:
+
+```
+git clone https://github.com/Mohammaddvd/penny_bruteforcer
+cd penny-bruteforcer
+```
+
+## Usage
+
+To see the available options and usage instructions, run:
+
+```
+python3 penny.py --help
+```
+
+### Example Usage
+
+```
+python3 penny.py -s ssh -i 192.168.1.1 --port 22 -U usernames.txt -P passwords.txt -t 50
+```
+
+## Command Options
+
+```
+usage: penny.py [-h] [-s SERVICE] [-i IP] [--port PORT] [-d DATA] [-c COOKIES] [-u USERNAME] [-p PASSWORD] [-U USERNAMES] [-P PASSWORDS] [-t THREAD]
+
+Options:
+  -h, --help                  Show this help message and exit
+  -s SERVICE, --service SERVICE  
+                              Specify the service to attack [mysql, ssh, http-post]
+  -i IP, --ip IP              Target IP address
+  --port PORT                 Target port
+  -d DATA, --data DATA        For HTTP POST, specify the body (e.g., 'username=^USER^&pwd=^PWD^':incorrect creds)
+  -c COOKIES, --cookies COOKIES  
+                              Cookie value (e.g., -c 'admin:1')
+  -u USERNAME, --user USERNAME  
+                              Single username (if not using a list)
+  -p PASSWORD, --password PASSWORD  
+                              Single password (if not using a list)
+  -U USERNAMES, --users USERNAMES  
+                              File containing a list of usernames
+  -P PASSWORDS, --passwords PASSWORDS  
+                              File containing a list of passwords
+  -t THREAD, --thread THREAD  
+                              Maximum number of threads (default is 30)
+```
+
+---
+
+Let me know if you need further modifications or additions!
